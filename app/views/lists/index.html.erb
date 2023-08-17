@@ -1,0 +1,25 @@
+<%= render "navbar" %>
+
+<div class="d-flex flex-column gap-2 justify-content-center">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=859&q=80);">
+    <div class="container text-center">
+      <h1><strong>Save any kind of movie!</strong></h1>
+    </div>
+  </div>
+</div>
+
+<div class="text-center mt-4 mb-4">
+<h1>My lists</h1>
+</div>
+
+<div class="text-center mt-4 mb-4">
+<%= link_to 'Create a new list', new_list_path, class: 'btn btn-outline-danger' %>
+</div>
+
+<div class="d-flex flex-row flex-wrap justify-content-center gap-2 mb-4">
+  <% @lists.each do |list| %>
+  <div class="card col-6">
+    <%= link_to list.name, list_path(list.id) %>
+  </div>
+  <% end %>
+</div>
