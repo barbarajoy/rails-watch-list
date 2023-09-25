@@ -1,8 +1,13 @@
-a {
+#navbar-link > a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
-a:hover {
-  color: red;
+.navbar {
+  background-color: $dark-grey;
+}
+
+.navbar-icon {
+  width: 5%;
+  height: 5%;
 }
