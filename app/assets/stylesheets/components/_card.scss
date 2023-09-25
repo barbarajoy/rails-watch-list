@@ -1,4 +1,4 @@
-.card {
+.card, .card-lists {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -8,6 +8,17 @@
   justify-content: space-between;
   height: 100%;
 }
+
+.card-lists > a {
+  text-decoration: none;
+  color: $dark-grey;
+  font-weight: bold;
+
+  &:hover {
+    color: $dark-red;
+  }
+}
+
 
 .card > img {
   height: 200px;

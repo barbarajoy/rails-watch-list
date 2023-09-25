@@ -6,3 +6,14 @@
 @import "banner";
 @import "card";
 @import "button";
+@import "lists";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background: $very-light-grey;
+  font-family: Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
